@@ -1,0 +1,169 @@
+/*
+ROSA: #b5838d #ff006e #f08080
+MORADO: #9a8c98
+AMARILLO: #ffb700
+NEGRO: #999
+GRIS: #9999a1
+*/
+.container {
+  background: #EECDA3;
+  background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);
+  background: linear-gradient(to right, #EF629F, #EECDA3);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  max-width: 950px;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 8px;
+  position: relative;
+  overflow: scroll;
+}
+
+.content {
+  padding: 1em;
+}
+
+td {
+  display: block;
+  width: 100%;
+}
+
+td:nth-of-type(1) {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ff006e;
+}
+
+th {
+  display: none;
+}
+
+.position {
+  background-color: #ff006e;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin-right: 0.5em;
+}
+
+.actions {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+.close {
+  height: 40px;
+  width: 40px;
+  color: white;
+  border-radius: 50px;
+  background-color: #ff006e;
+  display: inline-block;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  font-weight: 300;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-item {
+  border-bottom: solid;
+  border-width: 2px;
+  border-color: #ff006e;
+  padding-bottom: 1em;
+  font-size: 2em;
+}
+
+.address {
+  font-weight: bold;
+  color: #ff006e;
+  font-size: 0.9em;
+  margin-top: 1em;
+  display: inline-block;
+}
+
+.main-image {
+  float: left;
+  margin-right: 1em;
+  height: 250px;
+}
+
+/*BOX-SHADOW recibe 5 valores
+diferenciaHorizontal diferenciaVertical Desenfoque amplitud color*/
+html {
+  font-family: 'Chelsea Market', cursive;
+}
+
+a {
+  text-decoration: none;
+  color: #ff006e;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+img {
+  max-width: 100%;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.fa-star {
+  color: #ffca3a;
+}
+
+.paragraph {
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+.table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.table td, .table th {
+  padding: 1em;
+  text-align: left;
+}
+
+.table tr:nth-child(even) {
+  background-color: #fde2e4;
+}
+
+@media (min-width:900px) {
+  th {
+    display: table-cell;
+  }
+
+  td {
+    width: auto;
+    display: table-cell;
+  }
+
+  td:nth-of-type(1) {
+    font-size: 1em;
+  }
+
+  .content {
+    padding: 1.8em;
+  }
+}
+
+@media (min-height:550px) {
+  .content {
+    height: 500px;
+  }
+}
