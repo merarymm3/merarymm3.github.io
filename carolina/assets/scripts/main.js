@@ -1,25 +1,29 @@
-let links = document.querySelectorAll(".Close");
+//Obtener los elementos de la clase .close
+let links = document.querySelectorAll(".close");
 
-links.forEach(function (link) {
+//Recorrerlos
 
-  link.addEventListener("Click", function(ev) {
+links.forEach(function(link) {
 
+  //Agregar un evento click a cada uno de ellos - case sensitive
+  link.addEventListener("click", function(ev) {
     ev.preventDefault();
-
     let content = document.querySelector('.content');
 
-    content.classList.remove("animate_slideInDown");
-    content.classList.remove("animate_animated");
+    //Quitarle las clases de animación que ya tiene
+    content.classList.remove("animate__pulse");
+    content.classList.remove("animate__animated");
 
-    content.classList.add("animate_fadeOutUp");
-    content.classList.add("animate_animated");
+    //agregar las clases de animación que ya tiene
+    content.classList.add("animate__fadeOutUp");
+    content.classList.add("animate__animated");
 
     setTimeout(function() {
       window.history.go(-1);
     }, 600);
-    setInternal
+    setInterval
 
     return false;
 
-  ));
-));
+  });
+});
