@@ -6,9 +6,12 @@ NEGRO: #
 GRIS: #
 */
 .container {
-  background: #EECDA3;
-  background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);
-  background: linear-gradient(to right, #EF629F, #EECDA3);
+  background: #6190E8;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #A7BFE8, #6190E8);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 100vh;
   display: flex;
   align-items: center;
@@ -46,7 +49,7 @@ th {
 }
 
 .position {
-  background-color: #ff006e;
+  background-color: #f28482;
   color: white;
   padding: 10px;
   border-radius: 8px;
@@ -64,20 +67,20 @@ th {
   width: 40px;
   color: white;
   border-radius: 50px;
-  background-color: #ff006e;
+  background-color: #f28482;
   display: inline-block;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   font-weight: 300;
   cursor: pointer;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .title-item {
   border-bottom: solid;
   border-width: 2px;
-  border-color: #ff006e;
+  border-color: #3c096c;
   padding-bottom: 1em;
   font-size: 2em;
 }
@@ -96,15 +99,13 @@ th {
   height: 250px;
 }
 
-/*BOX-SHADOW recibe 5 valores
-diferenciaHorizontal diferenciaVertical Desenfoque amplitud color*/
 html {
-  font-family: 'Chelsea Market', cursive;
+  font-family: 'Quicksand', sans-serif;
 }
 
 a {
   text-decoration: none;
-  color: #ff006e;
+  color: #9e0059;
 }
 
 a:hover {
@@ -121,12 +122,11 @@ img {
 }
 
 .fa-star {
-  color: #ffca3a;
+  color: #ff9e00;
 }
 
 .paragraph {
   line-height: 1.5em;
-  text-align: justify;
 }
 
 .table {
@@ -140,7 +140,7 @@ img {
 }
 
 .table tr:nth-child(even) {
-  background-color: #fde2e4;
+  background-color: #ad6a6c;
 }
 
 @media (min-width:900px) {
