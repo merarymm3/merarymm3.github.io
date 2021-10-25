@@ -205,13 +205,13 @@ body.nav_fixed .nav .wrap{
 .slider{
   overflow: hidden;
   width: 100%;
-  height: 50vh; /*PROBLEMA*/
+  height: 80vh; /*PROBLEMA*/
   margin: 10px auto;
   }
   .slider ul{
       display: flex;
       animation: cambio 30s infinite alternate linear;
-      width: 400%;
+      width: 202%;
       text-align: center;
   }
   .slider li{
