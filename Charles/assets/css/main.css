@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    max-width: 80%;
+    margin: 20px auto;
+    
+}
+
+h1{
+    font-weight: normal;
+    text-align: center;
+    padding-top: 50px;
+}
+hr{
+    height: 1px;
+    border: none;
+    background: #7a7a7a;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.logo{
+    font-family: 'Pacifico';
+    font-size: 40px;
+}
+
+.logo_main{
+  height: 100px;
+  padding: 8px;
+  background-image: linear-gradient(to right, #0545a4 0%, #517fa4 100%);
+  /*color del encabezado*/
+  color: white;
+  cursor: default;
+}
+
+.logo_small{
+  display: inline-block;
+  font-size: 20px;
+  padding: 4px;
+  margin-right: 50px;
+  color: #019CDE;
+  cursor: pointer;
+}
+
+.img-inicio {
+    width: 100px;
+    padding-right: 10px;
+  }
+.nav{
+    float: left;
+    width: 100%;
+    background: #383835;
+    color: white;
+    padding: 0 20px;
+    transition: .3s ease all;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.nav .wrap{
+    position: relative;
+    left: -150px;
+    transition: 0.4s ease all;
+}
+
+nav{
+    display: inline-block;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+nav a{
+    display: block;
+    padding: 20px;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s ease all;
+}
+
+nav a:hover{
+    color: white;
+    background: #019CDE;
+}
+
+.main{
+    background: white;
+    padding: 80px; 
+}
+
+body.nav_fixed .nav{
+    position: fixed;
+    top: 0;
+}
+
+body.nav_fixed .nav .wrap{
+    left: 0;
+}
+
+
+.btn-menu{
+    width: 60px;
+    height: 60px;
+    padding: 22px;
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #019CDE;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    transition: all 500ms cubic-bezier(1, 0, 0, 1);
+    transform: translateX(100px);
+}
+
+.btn-menu:hover{
+    transform: scale(1.2);
+    background: #42acfa;
+}
+
+
+/*MENU RESPONSIVE*/
+
+@media screen and (max-width: 800px){
+    .btn-menu{
+        transform: translateX(0px);
+    }
+    
+    .logo_main{
+        display: none;
+    }
+    
+    .nav{
+        width: 70%;
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        padding: 0px;
+        transform: translateX(-100%);
+    }
+    
+    
+    .nav .wrap{
+        left: 0;
+    }
+    
+    nav{
+        width: 100%;
+        position: absolute;
+        top: 60px;
+    }
+    
+    nav li{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    .logo_small{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    
+    nav a{
+        width: 100%;
+        display: block;
+        padding: 20px;
+        margin: 0;
+    }
+    
+    .nav-toggle{
+        transition: all 300ms cubic-bezier(1,0,0,1);
+        transform: translateX(0%);
+    }
+    
+    
+    .main{
+    background: white;
+    padding: 20px;
+}
+}
+
+/*AQUI TERMINA EL MENU - INICIA SLIDER*/
+
+.slider{
+  overflow: hidden;
+  width: 100%;
+  height: 50vh; /*PROBLEMA*/
+  margin: 10px auto;
+  }
+  .slider ul{
+      display: flex;
+      animation: cambio 30s infinite alternate linear;
+      width: 400%;
+      text-align: center;
+  }
+  .slider li{
+      width: 100%;
+      list-style: none;
+  }
+  .slider img{
+      width: 100%;
+      height: 100%;
+      
+  }
+  @keyframes cambio{
+      0%{margin-left: 0;}
+      20%{margin-left: 0;}
+      
+      25%{margin-left: -100%;}
+      45%{margin-left: -100%;}
+      
+      50%{margin-left: -200%;}
+      70%{margin-left: -200%;}
+      
+      75%{margin-left: -300%;}
+      100%{margin-left: -300%;}
+  }
+  @media only screen and (min-width:382px) and (max-width:503px){
+  .slider, .slider ul, .slider img{
+      height: 60vh;
+  }
+  }
+
+  /*AQUI VA EL PIE DE PAGINA*/
+
+.pie-pagina{
+    width: 100%;
+    background-color: #294674;
+    
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 15px 0px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #383835;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #383835;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 15px 0px;
+    }
+}
+/*TABLA*/
+.table{
+	width: 100%;
+	border-collapse: collapse;
+    background-color: white;
+    text-align: left;
+    border-radius: 1%;
+  
+}
+
+.table tbody tr:nth-child(even){
+	background-color: #a19f9f;
+}
+th, td {
+    padding: 10px;
+  
+  }
+ 
+  thead {
+    background-color: #294674;
+    color: white;
+    text-align: center;
+    border-bottom: solid 5px #000000;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #ddd;
+  }
+  
+  td:nth-child(odd) {
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #294674;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
+
+/*responsive*/
+
+@media(max-width: 500px){
+	.table thead{
+		display: none;
+	}
+
+	.table, .table tbody, .table tr, .table td{
+		display: block;
+		width: 100%;
+	}
+	.table tr{
+		margin-bottom:15px;
+	}
+	.table td{
+		text-align: right;
+		padding-left: 50%;
+		text-align: right;
+		position: relative;
+	}
+	.table td::before{
+		content: attr(data-label);
+		position: absolute;
+		left:0;
+		width: 50%;
+		padding-left:15px;
+		font-size:15px;
+		font-weight: bold;
+		text-align: left;
+	}
+}
