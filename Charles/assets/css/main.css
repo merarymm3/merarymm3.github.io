@@ -324,6 +324,13 @@ th, td {
     text-align: center;
     border-bottom: solid 5px #000000;
   }
+
+  .theadcolor {
+    background-color: #016e75;
+    color: white;
+    text-align: center;
+    border-bottom: solid 5px #000000;
+  }
   
   tr:nth-child(even) {
     background-color: #ddd;
